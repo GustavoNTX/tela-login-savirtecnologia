@@ -39,8 +39,14 @@ const Register = () => {
 
     return (
         <div className="d-flex align-items-center justify-content-center vh-100" style={{ backgroundColor: "#B8E0D2" }}>
+            {/* Card de cadastro */}
             <div className="card p-4 shadow-lg" style={{ width: "400px", borderRadius: "15px" }}>
                 <div className="card-body">
+                    {/* Imagem acima do nome */}
+                    <div className="text-center mb-4">
+                        <img src="logo.png" alt="Imagem de cadastro" style={{ maxWidth: "100px", borderRadius: "50%" }} />
+                    </div>
+
                     <h2 className="text-center text-dark fw-bold mb-4">Cadastro</h2>
                     <form onSubmit={handleRegister}>
                         <div className="mb-3">
